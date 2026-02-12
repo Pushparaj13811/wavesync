@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="waveGradFav" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark rounded background -->
+  <rect width="32" height="32" rx="7" ry="7" fill="#0A0A0F"/>
+
+  <!-- 5 simplified bars for small size clarity -->
+  <!-- Each bar 3px wide, 2px gap. Total: 5*3 + 4*2 = 23, offset = (32-23)/2 = 4.5 -->
+  <rect x="4.5"  y="13"  width="3" height="6"  rx="1.5" fill="url(#waveGradFav)" opacity="0.70"/>
+  <rect x="9.5"  y="9"   width="3" height="14" rx="1.5" fill="url(#waveGradFav)" opacity="0.82"/>
+  <rect x="14.5" y="5"   width="3" height="22" rx="1.5" fill="url(#waveGradFav)"/>
+  <rect x="19.5" y="9"   width="3" height="14" rx="1.5" fill="url(#waveGradFav)" opacity="0.82"/>
+  <rect x="24.5" y="13"  width="3" height="6"  rx="1.5" fill="url(#waveGradFav)" opacity="0.70"/>
+</svg>

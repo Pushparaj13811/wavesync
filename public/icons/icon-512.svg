@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="waveGrad512" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <clipPath id="roundClip512">
+      <rect width="512" height="512" rx="96" ry="96"/>
+    </clipPath>
+    <radialGradient id="glow512" cx="50%" cy="55%" r="40%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0A0A0F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Dark rounded background -->
+  <rect width="512" height="512" rx="96" ry="96" fill="#0A0A0F"/>
+
+  <!-- Subtle glow -->
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#glow512)"/>
+
+  <!-- Waveform / equalizer bars -->
+  <g clip-path="url(#roundClip512)">
+    <!-- 9 bars, each 30px wide with 14px gap -->
+    <!-- Total width: 9*30 + 8*14 = 382, offset-x = (512-382)/2 = 65 -->
+    <rect x="65"  y="218" width="30" height="76"  rx="15" fill="url(#waveGrad512)" opacity="0.65"/>
+    <rect x="109" y="182" width="30" height="148" rx="15" fill="url(#waveGrad512)" opacity="0.72"/>
+    <rect x="153" y="148" width="30" height="216" rx="15" fill="url(#waveGrad512)" opacity="0.80"/>
+    <rect x="197" y="108" width="30" height="296" rx="15" fill="url(#waveGrad512)" opacity="0.88"/>
+    <rect x="241" y="78"  width="30" height="356" rx="15" fill="url(#waveGrad512)"/>
+    <rect x="285" y="108" width="30" height="296" rx="15" fill="url(#waveGrad512)" opacity="0.88"/>
+    <rect x="329" y="148" width="30" height="216" rx="15" fill="url(#waveGrad512)" opacity="0.80"/>
+    <rect x="373" y="182" width="30" height="148" rx="15" fill="url(#waveGrad512)" opacity="0.72"/>
+    <rect x="417" y="218" width="30" height="76"  rx="15" fill="url(#waveGrad512)" opacity="0.65"/>
+  </g>
+</svg>

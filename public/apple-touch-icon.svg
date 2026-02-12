@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="waveGradApple" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <clipPath id="roundClipApple">
+      <rect width="180" height="180" rx="36" ry="36"/>
+    </clipPath>
+    <radialGradient id="glowApple" cx="50%" cy="55%" r="40%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0A0A0F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Dark rounded background -->
+  <rect width="180" height="180" rx="36" ry="36" fill="#0A0A0F"/>
+
+  <!-- Subtle glow -->
+  <rect width="180" height="180" rx="36" ry="36" fill="url(#glowApple)"/>
+
+  <!-- Waveform / equalizer bars -->
+  <g clip-path="url(#roundClipApple)">
+    <!-- 7 bars, each 11px wide with 6px gap -->
+    <!-- Total width: 7*11 + 6*6 = 113, offset-x = (180-113)/2 = 33.5 -->
+    <rect x="33.5"  y="68"  width="11" height="44" rx="5.5" fill="url(#waveGradApple)" opacity="0.70"/>
+    <rect x="50.5"  y="50"  width="11" height="80" rx="5.5" fill="url(#waveGradApple)" opacity="0.78"/>
+    <rect x="67.5"  y="36"  width="11" height="108" rx="5.5" fill="url(#waveGradApple)" opacity="0.86"/>
+    <rect x="84.5"  y="24"  width="11" height="132" rx="5.5" fill="url(#waveGradApple)"/>
+    <rect x="101.5" y="36"  width="11" height="108" rx="5.5" fill="url(#waveGradApple)" opacity="0.86"/>
+    <rect x="118.5" y="50"  width="11" height="80" rx="5.5" fill="url(#waveGradApple)" opacity="0.78"/>
+    <rect x="135.5" y="68"  width="11" height="44" rx="5.5" fill="url(#waveGradApple)" opacity="0.70"/>
+  </g>
+</svg>
