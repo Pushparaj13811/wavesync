@@ -1,0 +1,45 @@
+{
+  "name": "WaveSync — Immersive Music Player",
+  "short_name": "WaveSync",
+  "description": "A high-performance music player with real-time audio visualization, frequency analysis, and low-latency playback powered by Web Audio API.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0A0A0F",
+  "theme_color": "#6366F1",
+  "categories": ["music", "entertainment"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Search Music",
+      "url": "/search",
+      "icons": []
+    },
+    {
+      "name": "My Library",
+      "url": "/library",
+      "icons": []
+    }
+  ]
+}
