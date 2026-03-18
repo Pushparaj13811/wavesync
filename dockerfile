@@ -9,7 +9,7 @@ FROM node:22-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN NEXT_TELEMETRY_DISABLED=1 npx next build --no-turbopack
+RUN NEXT_TELEMETRY_DISABLED=1 npx next build --webpack
 
 # Stage 3: Production runner
 FROM node:22-alpine AS runner
